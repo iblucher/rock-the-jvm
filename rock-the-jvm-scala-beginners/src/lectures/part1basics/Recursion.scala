@@ -47,14 +47,6 @@ object Recursion extends App {
   */
 
   // 1 - string concatenation
-//  def stringConcatenation(s: String, n: Int): String = {
-//    def concatHelper(str: String, accumulator: Int): String =
-//      if (accumulator == 0) str
-//      else concatHelper(str + str, accumulator - 1)
-//
-//    concatHelper(s, n - 1)
-//  }
-
   // ACCUMULATORS NEED TO HAVE THE SAME RETURN TYPE AS THE INTENDED RETURN TYPE OF THE FUNCTION!!!
   @tailrec
   def concatenateTailRec(aString: String, n: Int, accumulator: String): String =
